@@ -1,0 +1,27 @@
+dependencies:
+  esp-pqc:
+    dependencies:
+    - name: idf
+      version: '>=6.0'
+    - name: mbedtls
+      override_path: components/mbedtls
+    source:
+      path: ../esp-pqc
+      type: local
+    version: 0.1.0
+  idf:
+    source:
+      type: idf
+    version: 6.0.0
+  mbedtls:
+    dependencies: []
+    source:
+      path: ../esp-pqc/components/mbedtls
+      type: local
+    version: '*'
+direct_dependencies:
+- esp-pqc
+- idf
+manifest_hash: 47a09d619ded4cdb6e16a95db55c56ce1c41ebcaba7b7976f56e467f14420295
+target: esp32s3
+version: 3.0.0
