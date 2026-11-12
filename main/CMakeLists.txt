@@ -1,5 +1,11 @@
 idf_component_register(
     SRCS "main.cpp"
     INCLUDE_DIRS "."
-    REQUIRES esp-pqc
+    PRIV_REQUIRES
+        esp-pqc
+        esp_driver_gpio
+        esp_timer
+        esp_hw_support
+        heap
+        freertos
 )
